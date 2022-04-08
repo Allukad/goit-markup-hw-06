@@ -11,6 +11,7 @@ body {
 :root {
   --main-color: #212121;
   --sec-color: #757575;
+  --hover-color: #2196F3;
   --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a {
@@ -59,7 +60,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .head-logo {
   margin-right: 93px;
@@ -110,7 +111,7 @@ img {
   display: block;
   height: 4px;
   width: 0;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   transition: width var(--anim-fast);
   border-radius: 2px;
 }
@@ -120,10 +121,10 @@ img {
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .nav-main {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .nav-main::after {
   position: absolute;
@@ -133,7 +134,7 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   border-radius: 2px;
 }
 /* Шапка Контакты */
@@ -162,7 +163,7 @@ img {
 }
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 /* Стили главной страницы */
 /* Заказать услугу */
@@ -204,7 +205,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -351,7 +352,7 @@ img {
 .social-link:hover,
 .social-link:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 .social-list .icon {
   fill: currentColor;
@@ -386,8 +387,8 @@ img {
 }
 .clients-link:hover,
 .clients-link:focus {
-  color: #2196f3;
-  border: 1px solid #2196f3;
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
 }
 .clients-list .icon {
   fill: currentColor;
@@ -418,7 +419,7 @@ img {
 }
 .filter-button:hover,
 .filter-button:focus {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -557,7 +558,7 @@ img {
 .social-foot-link:hover,
 .social-foot-link:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 .social-foot-list .icon {
   fill: currentColor;
@@ -600,4 +601,13 @@ img {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000000;
+  transition: color var(--anim-fast);
+}
+.modal-btn .icon {
+  fill: currentColor;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--hover-color);
 }
