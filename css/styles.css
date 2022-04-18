@@ -611,6 +611,7 @@ border-radius: 4px;
 .subscribe-btn .icon { 
   margin-left: 10px;
   fill: currentColor;
+  stroke: currentColor;
 }
 /* Модальное окно */
 .modal-backdrop {
