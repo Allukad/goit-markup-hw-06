@@ -528,6 +528,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 /* Подвал социалка */
+.footer-contacts {
+  flex-grow: 1;
+}
 .foot-soc-box {
   margin-left: 70px;
 }
@@ -649,6 +652,8 @@ border-radius: 4px;
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -682,7 +687,11 @@ line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--sec-color);
 }
+.modal-coment {
+  margin-bottom: 0px;
+}
 .modal-input-box {
+  display: block;
   position: relative;
   margin-top: 4px;
   color: var(--main-color);
@@ -725,14 +734,18 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 user-select: none;
 }
+.modal-agree-text {
+display: flex;
+align-items: center;
+}
 .checkbox {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.modal-agreement>span::before {
-  content: '';
-  display: inline-block;
+.custom-checkbox {
+  display: flex;
+  align-items: center;
   width: 16px;
   height: 15px;
   flex-shrink: 0;
@@ -740,28 +753,24 @@ user-select: none;
   border: 2px solid var(--main-color);
   border-radius: 2px;
   margin-right: 8.38px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
   transition: border-color var(--anim-fast), background-color var(--anim-fast), background-image var(--anim-fast);
 }
-.modal-agreement>.checkbox:not(:disabled):not(:checked)+span:hover::before {
+.modal-agreement>.checkbox:not(:disabled):not(:checked)+.modal-agree-text:hover>.custom-checkbox {
   border-color: var(--hover-color);
 }
-.modal-agreement>.checkbox:not(:disabled):active+span::before {
+.modal-agreement>.checkbox:not(:disabled):active+.modal-agree-text>.custom-checkbox {
   background-color: var(--hover-color);
   border-color: var(--hover-color);
 }
-.modal-agreement>.checkbox:focus+span::before {
+.modal-agreement>.checkbox:focus+.modal-agree-text>.custom-checkbox {
   border-color: var(--hover-color);
 }
-.modal-agreement>.checkbox:focus:not(:checked)+span::before {
+.modal-agreement>.checkbox:focus:not(:checked)+.modal-agree-text>.custom-checkbox {
   border-color: var(--hover-color);
 }
-.modal-agreement>.checkbox:checked+span::before {
+.modal-agreement>.checkbox:checked+.modal-agree-text>.custom-checkbox {
   border-color: var(--hover-color);
   background-color: var(--hover-color);
-  background-image: url("../images/icons.svg#icon-person");
 }
 .modal-agree-link {
   color: var(--hover-color);

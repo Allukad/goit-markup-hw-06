@@ -404,7 +404,7 @@
     <footer class="footer">
       <div class="container footer-box">
         <!-- Лого -->
-        <div>
+        <div class="footer-contacts">
         <a class="logo" href="./index.html"
           >Web<span class="logo-foot-studio">Studio</span></a
         >
@@ -491,32 +491,38 @@
       <form name="signup-form" class="modal-signup" autocomplete="on">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
 <label class="modal-label">Имя
-  <div class="modal-input-box">
+  <span class="modal-input-box">
   <input type="text" name="username" class="modal-input" required >
   <svg class="icon" width="18" height="18">
     <use href="./images/icons.svg#icon-person"></use>
-  </svg></div>
+  </svg></span>
 </label>
 <label class="modal-label">Телефон
-  <div class="modal-input-box">
+  <span class="modal-input-box">
   <input type="tel" name="user-tel" class="modal-input" required ><svg class="icon" width="18"
   height="18">
     <use href="./images/icons.svg#icon-phone"></use>
-  </svg></div>
+  </svg></span>
 </label>
 <label class="modal-label">Почта
-  <div class="modal-input-box">
+  <span class="modal-input-box">
   <input type="email" name="user-email" class="modal-input" required ><svg class="icon" width="18"
   height="18">
     <use href="./images/icons.svg#icon-email"></use>
-  </svg></div>
+  </svg></span>
 </label>
-<label class="modal-label">Комментарий
+<label class="modal-label modal-coment">Комментарий
   <textarea name="user-feedback" rows="7" placeholder="Введите текст"></textarea>
 </label>
 <label class="modal-label modal-agreement">
   <input type="checkbox" name="agreement" value="agreement" required class="checkbox">
-  <span>Соглашаюсь с рассылкой и принимаю &nbsp;</span>
+  <span class="modal-agree-text">
+    <span class="custom-checkbox">
+    <svg class="icon" width="16" height="15">
+      <use href="./images/icons.svg#icon-check"></use>
+    </svg>
+  </span>
+    Соглашаюсь с рассылкой и принимаю &nbsp;</span>
     <a href="#" class="modal-agree-link">Условия договора</a>
 </label>
 <button class="button modal-signup-btn" type="submit">Отправить</button>
