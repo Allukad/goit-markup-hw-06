@@ -62,7 +62,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--hover-color);
 }
-.head-logo {
+.header__logo {
   margin-right: 93px;
 }
 /* Стили Шапки */
@@ -71,28 +71,28 @@ img {
   height: 80px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-.head-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
 /* Шапка Логотип */
-.logo-head-studio {
+.header__logo-studio {
   color: #000000;
 }
 /* Шапка Навигация */
-.header-nav-list {
+.site-navigation__list {
   display: flex;
   padding-left: 0px;
   margin: 0px;
 }
-.header-nav-item {
+.site-navigation__item {
   margin-right: 50px;
 }
-.header-nav-item:last-child {
+.site-navigation__item:last-child {
   margin-right: 0px;
 }
-.header-nav-link {
+.site-navigation__link {
   display: block;
   position: relative;
   padding: 32px 0;
@@ -103,7 +103,7 @@ img {
   color: var(--main-color);
   transition: color var(--anim-fast);
 }
-.header-nav-link::after {
+.site-navigation__link::after {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -115,18 +115,18 @@ img {
   transition: width var(--anim-fast);
   border-radius: 2px;
 }
-.header-nav-link:hover::after {
+.site-navigation__link:hover::after {
   width: 100%;
   left: 0;
 }
-.header-nav-link:hover,
-.header-nav-link:focus {
+.site-navigation__link:hover,
+.site-navigation__link:focus {
   color: var(--hover-color);
 }
-.nav-main {
+.site-navigation__main {
   color: var(--hover-color);
 }
-.nav-main::after {
+.site-navigation__main::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -138,16 +138,16 @@ img {
   border-radius: 2px;
 }
 /* Шапка Контакты */
-.header-contacts {
+.head-contacts {
   display: flex;
   align-items: center;
   padding: 0px;
   margin-left: auto;
 }
-.contacts-item:not(:last-child) {
+.head-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-link {
+.head-contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -157,12 +157,12 @@ img {
   color: var(--sec-color);
   transition: color var(--anim-fast);
 }
-.header-contacts .icon {
+.head-contacts .icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.head-contacts__link:hover,
+.head-contacts__link:focus {
   color: var(--hover-color);
 }
 /* Стили главной страницы */
